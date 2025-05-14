@@ -12,7 +12,7 @@ public class HelloWorld {
     @GetMapping("/")
     public Message helloWorld() {
         Message m = new Message();
-        m.setMessage("HellocWorld!");
+        m.setMessage("HelloWorld!");
         return m;
     }
     @PostMapping("/helloyouname")
