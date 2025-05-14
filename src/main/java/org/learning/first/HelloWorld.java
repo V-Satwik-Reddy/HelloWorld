@@ -10,8 +10,10 @@ import java.util.List;
 @RestController
 public class HelloWorld {
     @GetMapping("/")
-    public static String helloWorld(){
-        return "Hello World";
+    public Message helloWorld() {
+        Message m = new Message();
+        m.setMessage("HellocWorld!");
+        return m;
     }
     @PostMapping("/helloyouname")
     public Message welcomeMessage() {
