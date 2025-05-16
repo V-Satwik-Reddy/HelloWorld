@@ -9,4 +9,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Inventory {
 
+    private int id;
+    private String name;
+    private String description;
+    private int price;
+    private int quantity;
 }
