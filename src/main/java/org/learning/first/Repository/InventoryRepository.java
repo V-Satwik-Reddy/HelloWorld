@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface InventoryRepository extends MongoRepository<Inventory, String> {
 
-
+    List<Inventory> findByTagsContaining(String tag);
 }
 
