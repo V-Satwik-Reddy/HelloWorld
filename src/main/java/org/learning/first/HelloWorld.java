@@ -1,10 +1,7 @@
 package org.learning.first;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.learning.first.Model.*;
 
 import java.util.List;
@@ -16,5 +13,10 @@ public class HelloWorld {
         Message m = new Message();
         m.setMessage("HelloWorld!");
         return m;
+    }
+    @PostMapping("/addItem")
+    public Message addItem(@RequestBody) {
+        Message m = new Message();
+
     }
 }
