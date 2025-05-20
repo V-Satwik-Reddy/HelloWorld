@@ -1,6 +1,7 @@
 package org.learning.first;
 
 import org.learning.first.Repository.InventoryRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.learning.first.Model.*;
@@ -9,7 +10,7 @@ import java.util.List;
 
 @RestController
 public class HelloWorld {
-
+    @Autowired
     InventoryRepository iR;
     @GetMapping("/")
     public Message helloWorld() {
