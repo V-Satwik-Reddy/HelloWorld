@@ -17,16 +17,4 @@ public class HelloWorld {
         m.setMessage("HelloWorld!");
         return m;
     }
-    @PostMapping("/helloyouname")
-    public Message welcomeMessage() {
-        Message m = new Message();
-        m.setMessage("Welcome to HelloWorld!");
-        return m;
-    }
-    @DeleteMapping("/delete")
-    public ResponseEntity<Message> deleteMessage() {
-        Message m = new Message();
-        m.setMessage("Can delete shit!");
-        return ResponseEntity.ok(m);
-    }
 }
